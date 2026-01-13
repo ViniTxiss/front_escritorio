@@ -6,7 +6,7 @@
 // Para produção: substitua 'https://seu-backend.onrender.com' pela URL real do seu backend no Render
 const BASE_URL = window.location.origin.includes('localhost') 
     ? 'http://localhost:5000' 
-    : (window.ENV?.API_URL || 'https://seu-backend.onrender.com'); // ⚠️ SUBSTITUA ESTA URL!
+    : (window.ENV?.API_URL || 'https://backend-escritorio.onrender.com'); // ⚠️ SUBSTITUA ESTA URL!
 
 // Formatação de valores monetários
 const formatCurrency = (value) => {
@@ -263,3 +263,4 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchProcesses();
     }, 300000); // 5 minutos
 });
+
